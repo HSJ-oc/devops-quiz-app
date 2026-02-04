@@ -18,7 +18,7 @@ fetch("data/questions.json")
     questions = data;
     loadQuestion();
   });
-
+//This is a modification
 function loadQuestion() {
   answered = false;
   nextBtn.disabled = true;
