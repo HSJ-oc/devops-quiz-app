@@ -1,4 +1,4 @@
-## Question Format
+## Question format and features
 
 Each question in `questions.json` follows this structure:
 
