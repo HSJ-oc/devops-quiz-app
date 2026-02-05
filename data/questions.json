@@ -1,13 +1,263 @@
-{
+[
+  {
     "id": "Q1",
+    "topic": "DevOps Culture",
+    "question": "What is a key principle of DevOps culture?",
+    "options": [
+      "Strict separation of development and operations",
+      "Collaboration between development and operations teams",
+      "Avoiding automation",
+      "Releasing software once per year"
+    ],
+    "answerIndex": 1,
+    "explanation": "DevOps emphasizes collaboration and shared responsibility."
+  },
+  {
+    "id": "Q2",
+    "topic": "DevOps Culture",
+    "question": "What does 'shift left' mean in DevOps?",
+    "options": [
+      "Move deployments to later stages",
+      "Address issues earlier in the development lifecycle",
+      "Reduce monitoring",
+      "Delay testing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Shift left focuses on catching problems earlier."
+  },
+  {
+    "id": "Q3",
+    "topic": "DevOps Culture",
+    "question": "What does CALMS stand for in DevOps?",
+    "options": [
+      "Culture, Automation, Lean, Measurement, Sharing",
+      "Code, Agile, Lean, Monitoring, Security",
+      "Culture, Analysis, Logging, Metrics, Scaling",
+      "Cloud, Automation, Logging, Monitoring, Security"
+    ],
+    "answerIndex": 0,
+    "explanation": "CALMS represents core DevOps values."
+  },
+  {
+    "id": "Q4",
+    "topic": "DevOps Culture",
+    "question": "Why is feedback important in DevOps?",
+    "options": [
+      "It slows development",
+      "It improves collaboration and quality",
+      "It replaces automation",
+      "It removes planning"
+    ],
+    "answerIndex": 1,
+    "explanation": "Fast feedback helps teams improve continuously."
+  },
+  {
+    "id": "Q5",
+    "topic": "Plan with DevOps",
+    "question": "Why is continuous planning important in DevOps?",
+    "options": [
+      "Plans never change",
+      "It supports rapid feedback and adaptation",
+      "It removes the need for backlogs",
+      "It eliminates documentation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Continuous planning allows quick adaptation."
+  },
+  {
+    "id": "Q6",
+    "topic": "Plan with DevOps",
+    "question": "Which tool is commonly used for DevOps planning?",
+    "options": [
+      "Jira",
+      "Docker",
+      "Terraform",
+      "Nginx"
+    ],
+    "answerIndex": 0,
+    "explanation": "Jira is widely used for planning and tracking."
+  },
+  {
+    "id": "Q7",
+    "topic": "Plan with DevOps",
+    "question": "What is a product backlog?",
+    "options": [
+      "A list of completed tasks",
+      "A prioritized list of work items",
+      "A deployment pipeline",
+      "A monitoring dashboard"
+    ],
+    "answerIndex": 1,
+    "explanation": "The backlog contains prioritized work."
+  },
+  {
+    "id": "Q8",
+    "topic": "Plan with DevOps",
+    "question": "Who is responsible for planning in DevOps?",
+    "options": [
+      "Only managers",
+      "Only developers",
+      "Only operations",
+      "The entire team"
+    ],
+    "answerIndex": 3,
+    "explanation": "DevOps promotes shared responsibility."
+  },
+  {
+    "id": "Q9",
+    "topic": "Version Control Systems",
+    "question": "What is the main purpose of version control?",
+    "options": [
+      "Run applications",
+      "Track and manage code changes",
+      "Deploy software",
+      "Monitor systems"
+    ],
+    "answerIndex": 1,
+    "explanation": "Version control tracks changes to code."
+  },
+  {
+    "id": "Q10",
+    "topic": "Version Control Systems",
+    "question": "Which command creates a new Git branch?",
+    "options": [
+      "git commit",
+      "git checkout -b",
+      "git merge",
+      "git push"
+    ],
+    "answerIndex": 1,
+    "explanation": "git checkout -b creates a new branch."
+  },
+  {
+    "id": "Q11",
+    "topic": "Version Control Systems",
+    "question": "What is a pull request?",
+    "options": [
+      "A way to delete code",
+      "A request to merge changes",
+      "A deployment trigger",
+      "A rollback method"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pull requests are used for code review and merging."
+  },
+  {
+    "id": "Q12",
+    "topic": "Version Control Systems",
+    "question": "What does git merge do?",
+    "options": [
+      "Deletes branches",
+      "Combines branch changes",
+      "Creates repositories",
+      "Deploys applications"
+    ],
+    "answerIndex": 1,
+    "explanation": "git merge combines changes from branches."
+  },
+  {
+    "id": "Q13",
     "topic": "Continuous Integration",
     "question": "What is the primary goal of Continuous Integration?",
     "options": [
       "Automatically deploy to production",
       "Frequently integrate code changes into a shared repository",
-      "Eliminate the need for testing",
-      "Remove the need for branches"
+      "Eliminate testing",
+      "Remove branches"
     ],
     "answerIndex": 1,
-    "explanation": "Continuous Integration aims to detect integration issues early."
+    "explanation": "CI detects integration issues early."
+  },
+  {
+    "id": "Q14",
+    "topic": "Continuous Integration",
+    "question": "Which activity is essential in CI?",
+    "options": [
+      "Manual testing",
+      "Automated testing",
+      "Annual releases",
+      "Disabling builds"
+    ],
+    "answerIndex": 1,
+    "explanation": "Automated tests validate changes quickly."
+  },
+  {
+    "id": "Q15",
+    "topic": "Continuous Integration",
+    "question": "How often should developers commit code in CI?",
+    "options": [
+      "Once a month",
+      "Once per sprint",
+      "Frequently",
+      "Only before releases"
+    ],
+    "answerIndex": 2,
+    "explanation": "Frequent commits reduce merge conflicts."
+  },
+  {
+    "id": "Q16",
+    "topic": "Continuous Integration",
+    "question": "Which tool is commonly used for CI?",
+    "options": [
+      "Jenkins",
+      "Terraform",
+      "Slack",
+      "Grafana"
+    ],
+    "answerIndex": 0,
+    "explanation": "Jenkins is a popular CI tool."
+  },
+  {
+    "id": "Q17",
+    "topic": "Continuous Delivery",
+    "question": "What does Continuous Delivery ensure?",
+    "options": [
+      "Code is always ready to deploy",
+      "Every change goes to production",
+      "No testing is required",
+      "Manual builds only"
+    ],
+    "answerIndex": 0,
+    "explanation": "CD ensures releasable software at any time."
+  },
+  {
+    "id": "Q18",
+    "topic": "Continuous Deployment",
+    "question": "What happens in Continuous Deployment?",
+    "options": [
+      "Manual approval is required",
+      "Every change is automatically deployed",
+      "Deployments happen yearly",
+      "Testing is skipped"
+    ],
+    "answerIndex": 1,
+    "explanation": "Continuous Deployment deploys automatically."
+  },
+  {
+    "id": "Q19",
+    "topic": "Infrastructure as Code",
+    "question": "What is Infrastructure as Code?",
+    "options": [
+      "Manual server setup",
+      "Defining infrastructure using code",
+      "Monitoring applications",
+      "Writing business logic"
+    ],
+    "answerIndex": 1,
+    "explanation": "IaC manages infrastructure through code."
+  },
+  {
+    "id": "Q20",
+    "topic": "Infrastructure as Code",
+    "question": "Which tool is used for Infrastructure as Code?",
+    "options": [
+      "Terraform",
+      "Git",
+      "Jenkins",
+      "Docker"
+    ],
+    "answerIndex": 0,
+    "explanation": "Terraform is a popular IaC tool."
   }
+  
+]
