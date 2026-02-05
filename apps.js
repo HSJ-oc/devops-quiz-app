@@ -7,7 +7,8 @@ fetch("questions.json")
     console.log("Questions loaded", questions);
   })
   .catch(error => console.error("Error loading questions:", error));
-const topicSelect = document.getElementById("topicSelect");
+
+  const topicSelect = document.getElementById("topicSelect");
 
 function loadTopics() {
   const topics = [...new Set(questions.map(q => q.topic))];
@@ -31,3 +32,32 @@ fetch("questions.json")
     loadTopics();
     displayQuestion();
   });
+let currentQuestion = null;
+
+function displayQuestion() {
+  const quizDiv = document.getElementById("quiz");
+  quizDiv.innerHTML = "";
+
+  const selectedTopic = topicSelect.value;
+  const filtered = selectedTopic
+    ? questions.filter(q => q.topic === selectedTopic)
+    : questions;
+
+  if (filtered.length === 0) return;
+
+  currentQuestion = filtered[Math.floor(Math.random() * filtered.length)];
+
+  const questionEl = document.createElement("h3");
+  questionEl.textContent = currentQuestion.question;
+  quizDiv.appendChild(questionEl);
+
+  currentQuestion.options.forEach((opt, index) => {
+    const label = document.createElement("label");
+    label.innerHTML = `
+      <input type="radio" name="answer" value="${index}" />
+      ${opt}
+    `;
+    quizDiv.appendChild(label);
+    quizDiv.appendChild(document.createElement("br"));
+  });
+}
