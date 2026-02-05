@@ -102,6 +102,59 @@
     ],
     "answerIndex": 3,
     "explanation": "DevOps promotes shared responsibility."
+  },
+  {
+    "id": "Q9",
+    "topic": "Version Control Systems",
+    "question": "What is the main purpose of version control?",
+    "options": [
+      "Run applications",
+      "Track and manage code changes",
+      "Deploy software",
+      "Monitor systems"
+    ],
+    "answerIndex": 1,
+    "explanation": "Version control tracks changes to code."
+  },
+  {
+    "id": "Q10",
+    "topic": "Version Control Systems",
+    "question": "Which command creates a new Git branch?",
+    "options": [
+      "git commit",
+      "git checkout -b",
+      "git merge",
+      "git push"
+    ],
+    "answerIndex": 1,
+    "explanation": "git checkout -b creates a new branch."
+  },
+  {
+    "id": "Q11",
+    "topic": "Version Control Systems",
+    "question": "What is a pull request?",
+    "options": [
+      "A way to delete code",
+      "A request to merge changes",
+      "A deployment trigger",
+      "A rollback method"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pull requests are used for code review and merging."
+  },
+  {
+    "id": "Q12",
+    "topic": "Version Control Systems",
+    "question": "What does git merge do?",
+    "options": [
+      "Deletes branches",
+      "Combines branch changes",
+      "Creates repositories",
+      "Deploys applications"
+    ],
+    "answerIndex": 1,
+    "explanation": "git merge combines changes from branches."
   }
+  
   
 ]
