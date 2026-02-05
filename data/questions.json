@@ -1,13 +1,54 @@
-{
+[
+  {
     "id": "Q1",
-    "topic": "Continuous Integration",
-    "question": "What is the primary goal of Continuous Integration?",
+    "topic": "DevOps Culture",
+    "question": "What is a key principle of DevOps culture?",
     "options": [
-      "Automatically deploy to production",
-      "Frequently integrate code changes into a shared repository",
-      "Eliminate the need for testing",
-      "Remove the need for branches"
+      "Strict separation of development and operations",
+      "Collaboration between development and operations teams",
+      "Avoiding automation",
+      "Releasing software once per year"
     ],
     "answerIndex": 1,
-    "explanation": "Continuous Integration aims to detect integration issues early."
+    "explanation": "DevOps emphasizes collaboration and shared responsibility."
+  },
+  {
+    "id": "Q2",
+    "topic": "DevOps Culture",
+    "question": "What does 'shift left' mean in DevOps?",
+    "options": [
+      "Move deployments to later stages",
+      "Address issues earlier in the development lifecycle",
+      "Reduce monitoring",
+      "Delay testing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Shift left focuses on catching problems earlier."
+  },
+  {
+    "id": "Q3",
+    "topic": "DevOps Culture",
+    "question": "What does CALMS stand for in DevOps?",
+    "options": [
+      "Culture, Automation, Lean, Measurement, Sharing",
+      "Code, Agile, Lean, Monitoring, Security",
+      "Culture, Analysis, Logging, Metrics, Scaling",
+      "Cloud, Automation, Logging, Monitoring, Security"
+    ],
+    "answerIndex": 0,
+    "explanation": "CALMS represents core DevOps values."
+  },
+  {
+    "id": "Q4",
+    "topic": "DevOps Culture",
+    "question": "Why is feedback important in DevOps?",
+    "options": [
+      "It slows development",
+      "It improves collaboration and quality",
+      "It replaces automation",
+      "It removes planning"
+    ],
+    "answerIndex": 1,
+    "explanation": "Fast feedback helps teams improve continuously."
   }
+]
