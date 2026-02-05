@@ -154,7 +154,57 @@
     ],
     "answerIndex": 1,
     "explanation": "git merge combines changes from branches."
+  },
+  {
+    "id": "Q13",
+    "topic": "Continuous Integration",
+    "question": "What is the primary goal of Continuous Integration?",
+    "options": [
+      "Automatically deploy to production",
+      "Frequently integrate code changes into a shared repository",
+      "Eliminate testing",
+      "Remove branches"
+    ],
+    "answerIndex": 1,
+    "explanation": "CI detects integration issues early."
+  },
+  {
+    "id": "Q14",
+    "topic": "Continuous Integration",
+    "question": "Which activity is essential in CI?",
+    "options": [
+      "Manual testing",
+      "Automated testing",
+      "Annual releases",
+      "Disabling builds"
+    ],
+    "answerIndex": 1,
+    "explanation": "Automated tests validate changes quickly."
+  },
+  {
+    "id": "Q15",
+    "topic": "Continuous Integration",
+    "question": "How often should developers commit code in CI?",
+    "options": [
+      "Once a month",
+      "Once per sprint",
+      "Frequently",
+      "Only before releases"
+    ],
+    "answerIndex": 2,
+    "explanation": "Frequent commits reduce merge conflicts."
+  },
+  {
+    "id": "Q16",
+    "topic": "Continuous Integration",
+    "question": "Which tool is commonly used for CI?",
+    "options": [
+      "Jenkins",
+      "Terraform",
+      "Slack",
+      "Grafana"
+    ],
+    "answerIndex": 0,
+    "explanation": "Jenkins is a popular CI tool."
   }
-  
-  
 ]
