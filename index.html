@@ -6,19 +6,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <h1>DevOps Quiz</h1>
 
+  <!-- Topic selector -->
   <label for="topicSelect">Select Topic:</label>
   <select id="topicSelect">
     <option value="">All Topics</option>
   </select>
 
+  <!-- Quiz content -->
   <div id="quiz"></div>
 
+  <!-- Submit button -->
   <button id="submitBtn">Submit Answer</button>
 
+  <!-- Feedback -->
   <div id="feedback"></div>
 
-  <script src="app.js"></script>
+  <!-- IMPORTANT: script at the bottom so DOM exists -->
+  <script src="apps.js"></script>
+
 </body>
 </html>

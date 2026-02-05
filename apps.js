@@ -1,14 +1,19 @@
 let questions = [];
+let currentQuestion = null;
 
-fetch("questions.json")
+const topicSelect = document.getElementById("topicSelect");
+const submitBtn = document.getElementById("submitBtn");
+const feedbackDiv = document.getElementById("feedback");
+
+// FETCH ONCE
+fetch("data/questions.json")
   .then(response => response.json())
   .then(data => {
     questions = data;
-    console.log("Questions loaded", questions);
+    loadTopics();
+    displayQuestion();
   })
   .catch(error => console.error("Error loading questions:", error));
-
-  const topicSelect = document.getElementById("topicSelect");
 
 function loadTopics() {
   const topics = [...new Set(questions.map(q => q.topic))];
@@ -20,19 +25,6 @@ function loadTopics() {
     topicSelect.appendChild(option);
   });
 }
-
-topicSelect.addEventListener("change", () => {
-  displayQuestion();
-});
-
-fetch("questions.json")
-  .then(res => res.json())
-  .then(data => {
-    questions = data;
-    loadTopics();
-    displayQuestion();
-  });
-let currentQuestion = null;
 
 function displayQuestion() {
   const quizDiv = document.getElementById("quiz");
@@ -54,15 +46,16 @@ function displayQuestion() {
   currentQuestion.options.forEach((opt, index) => {
     const label = document.createElement("label");
     label.innerHTML = `
-      <input type="radio" name="answer" value="${index}" />
+      <input type="radio" name="answer" value="${index}">
       ${opt}
     `;
     quizDiv.appendChild(label);
     quizDiv.appendChild(document.createElement("br"));
   });
 }
-const submitBtn = document.getElementById("submitBtn");
-const feedbackDiv = document.getElementById("feedback");
+
+// EVENTS
+topicSelect.addEventListener("change", displayQuestion);
 
 submitBtn.addEventListener("click", () => {
   const selected = document.querySelector('input[name="answer"]:checked');
@@ -72,12 +65,11 @@ submitBtn.addEventListener("click", () => {
     return;
   }
 
-  const answer = parseInt(selected.value);
+  const answer = Number(selected.value);
 
   if (answer === currentQuestion.answerIndex) {
     feedbackDiv.textContent = "✅ Correct! " + currentQuestion.explanation;
   } else {
-    feedbackDiv.textContent =
-      "❌ Incorrect. " + currentQuestion.explanation;
+    feedbackDiv.textContent = "❌ Incorrect. " + currentQuestion.explanation;
   }
 });
