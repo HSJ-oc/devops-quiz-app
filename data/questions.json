@@ -50,5 +50,58 @@
     ],
     "answerIndex": 1,
     "explanation": "Fast feedback helps teams improve continuously."
+  },
+  {
+    "id": "Q5",
+    "topic": "Plan with DevOps",
+    "question": "Why is continuous planning important in DevOps?",
+    "options": [
+      "Plans never change",
+      "It supports rapid feedback and adaptation",
+      "It removes the need for backlogs",
+      "It eliminates documentation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Continuous planning allows quick adaptation."
+  },
+  {
+    "id": "Q6",
+    "topic": "Plan with DevOps",
+    "question": "Which tool is commonly used for DevOps planning?",
+    "options": [
+      "Jira",
+      "Docker",
+      "Terraform",
+      "Nginx"
+    ],
+    "answerIndex": 0,
+    "explanation": "Jira is widely used for planning and tracking."
+  },
+  {
+    "id": "Q7",
+    "topic": "Plan with DevOps",
+    "question": "What is a product backlog?",
+    "options": [
+      "A list of completed tasks",
+      "A prioritized list of work items",
+      "A deployment pipeline",
+      "A monitoring dashboard"
+    ],
+    "answerIndex": 1,
+    "explanation": "The backlog contains prioritized work."
+  },
+  {
+    "id": "Q8",
+    "topic": "Plan with DevOps",
+    "question": "Who is responsible for planning in DevOps?",
+    "options": [
+      "Only managers",
+      "Only developers",
+      "Only operations",
+      "The entire team"
+    ],
+    "answerIndex": 3,
+    "explanation": "DevOps promotes shared responsibility."
   }
+  
 ]
