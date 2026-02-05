@@ -61,3 +61,23 @@ function displayQuestion() {
     quizDiv.appendChild(document.createElement("br"));
   });
 }
+const submitBtn = document.getElementById("submitBtn");
+const feedbackDiv = document.getElementById("feedback");
+
+submitBtn.addEventListener("click", () => {
+  const selected = document.querySelector('input[name="answer"]:checked');
+
+  if (!selected) {
+    feedbackDiv.textContent = "Please select an answer.";
+    return;
+  }
+
+  const answer = parseInt(selected.value);
+
+  if (answer === currentQuestion.answerIndex) {
+    feedbackDiv.textContent = "✅ Correct! " + currentQuestion.explanation;
+  } else {
+    feedbackDiv.textContent =
+      "❌ Incorrect. " + currentQuestion.explanation;
+  }
+});
