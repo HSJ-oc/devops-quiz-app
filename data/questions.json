@@ -206,5 +206,58 @@
     ],
     "answerIndex": 0,
     "explanation": "Jenkins is a popular CI tool."
+  },
+  {
+    "id": "Q17",
+    "topic": "Continuous Delivery",
+    "question": "What does Continuous Delivery ensure?",
+    "options": [
+      "Code is always ready to deploy",
+      "Every change goes to production",
+      "No testing is required",
+      "Manual builds only"
+    ],
+    "answerIndex": 0,
+    "explanation": "CD ensures releasable software at any time."
+  },
+  {
+    "id": "Q18",
+    "topic": "Continuous Deployment",
+    "question": "What happens in Continuous Deployment?",
+    "options": [
+      "Manual approval is required",
+      "Every change is automatically deployed",
+      "Deployments happen yearly",
+      "Testing is skipped"
+    ],
+    "answerIndex": 1,
+    "explanation": "Continuous Deployment deploys automatically."
+  },
+  {
+    "id": "Q19",
+    "topic": "Infrastructure as Code",
+    "question": "What is Infrastructure as Code?",
+    "options": [
+      "Manual server setup",
+      "Defining infrastructure using code",
+      "Monitoring applications",
+      "Writing business logic"
+    ],
+    "answerIndex": 1,
+    "explanation": "IaC manages infrastructure through code."
+  },
+  {
+    "id": "Q20",
+    "topic": "Infrastructure as Code",
+    "question": "Which tool is used for Infrastructure as Code?",
+    "options": [
+      "Terraform",
+      "Git",
+      "Jenkins",
+      "Docker"
+    ],
+    "answerIndex": 0,
+    "explanation": "Terraform is a popular IaC tool."
   }
+  
 ]
